@@ -1,0 +1,34 @@
+<div class="container">
+    <h3>Inline Effects</h3>
+    <div class="form-group">
+        <label>Choose Background</label>
+        <div>
+            <select class="form-control" [(ngModel)]="background">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <label>Choose Foreground</label>
+        <div>
+            <select class="form-control" [(ngModel)]="textColor">
+                <option value="white">White</option>
+                <option value="red">Red</option>
+            </select> 
+               </div>
+    </div>
+    <div class="form-group">
+        <label>Choose Alignment</label>
+        <div>
+            <input type="radio" name="align" value="left" [(ngModel)]="textAlign">Left
+            <input type="radio" name="align" value="center" [(ngModel)]="textAlign">Center
+            <input type="radio" name="align" value="right" [(ngModel)]="textAlign">Right
+        </div>
+    </div>
+    <div class="form-group text-center">
+        <h1 [ngStyle]="GetEffects()">Sample Text</h1>
+    </div>
+
+</div>

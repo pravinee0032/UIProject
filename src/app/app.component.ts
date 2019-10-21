@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Flipkart';
+  title = 'Angular 8 + Spring Boot 2 + Spring Data JPA + Oracle + CRUD Tutorial';
 }
